@@ -1,0 +1,259 @@
+body {
+    font: 14px 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    min-width: 970px;
+}
+
+.form {
+    width: 970px;
+    margin: auto;
+}
+
+.form form legend {
+    font: 25px 'Roboto', sans-serif;
+    color: #131316;
+    text-align: center;
+    padding-top: 114px;
+}
+
+.form form p {
+    font: 15px 'Roboto', sans-serif;
+    color: #ffe600;
+    text-align: center;
+    padding-top: 33px;
+    margin-bottom: 86px;
+}
+
+.col_one {
+    position: relative;
+    display: inline-block;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.checkbox-lbl {
+    display: inline-block;
+    color: #131316;
+    cursor: pointer;
+    position: relative;
+    padding-left: 27px;
+    margin: 0px 53px 19px 0px;
+    font-size: 14px;
+}
+
+.checkbox-lbl:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    background-color: #ffffff;
+    border: 2px solid #ffe600;
+}
+
+.checkbox-lbl:hover:before {}
+
+input[type=checkbox]:checked+.checkbox-lbl:after,
+.checkbox-lbl:hover:after {
+    content: '';
+    position: absolute;
+    top: 0.09em;
+    left: 0.215em;
+    bottom: 2px;
+    background: #ffe600;
+    content: '';
+    width: 14px;
+    height: 14px;
+}
+
+.checkbox-lbl:hover:after {
+    background: #f8f3c5;
+}
+
+
+.textarea-default:nth-child input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+}
+
+.col_one .row .input-text,
+.col_two .row .input-text {
+    background: #ffe600;
+    font-size: 15px;
+    color: #ffffff;
+    outline: none;
+    border-style: none;
+    width: 470px;
+    height: 51px;
+    padding-left: 23px;
+}
+
+.col_two {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.radio_b {
+    position: relative;
+    float: left;
+    display: block;
+    padding: 0px 55px 0px 22px;
+    margin-bottom: 18.5px;
+    font-size: 14px;
+    color: #131316;
+    cursor: pointer;
+}
+
+.radio_b:before {
+    background: #ffffff;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #ffe815;
+
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked+label:before {
+    content: "\2022";
+    text-align: center;
+    line-height: 0.41em;
+    font-family: Tahoma;
+    font-size: 26px;
+    color: #ffe815;
+}
+
+.radio_b {
+    display: inline;
+}
+
+.subject {
+    background: #ffe815;
+    outline: none;
+    font-size: 15px;
+    border-style: none;
+    width: 970px;
+    height: 51px;
+    margin-bottom: 20px;
+    padding-left: 22px;
+    color: #ffffff;
+}
+
+textarea {
+    background: #ffe815;
+    outline: none;
+    font-size: 15px;
+    border-style: none;
+    padding: 21px 0px 0px 23px;
+    width: 970px;
+    height: 180px;
+    color: #ffffff;
+    margin-bottom: 21px;
+}
+
+.submit {
+    background: #131316;
+    border: none;
+    width: 970px;
+    height: 50px;
+    font-size: 20px;
+    color: #efd801;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 112px;
+}
+
+.footer-wrapper {
+    background: #131316;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    width: 1159px;
+    margin: auto;
+    padding: 47px 0px 43px 19px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #ffe600;
+    display: inline-block;
+}
+
+.footer .socials {
+    float: right;
+    margin-right: 4px;
+}
+
+.footer .socials li {
+    display: inline;
+}
+
+.footer .socials li a {
+    display: inline-block;
+}
+
+.socials .fb a {
+    background: url('../images/sprite.png') no-repeat 0 -3px;
+    width: 8px;
+    height: 17px;
+}
+
+.socials .twitter a {
+    background: url('../images/sprite.png') no-repeat -18px -3px;
+    width: 18px;
+    height: 14px;
+    margin-left: 41px;
+}
+
+.socials .dribble a {
+    background: url('../images/sprite.png') no-repeat -46px -3px;
+    width: 18px;
+    height: 17px;
+    margin-left: 35px;
+}
+
+.socials .google a {
+    background: url('../images/sprite.png') no-repeat -74px -3px;
+    width: 18px;
+    height: 15px;
+    margin-left: 37px;
+}
+
+.socials .youtube a {
+    background: url('../images/sprite.png') no-repeat -102px -3px;
+    width: 18px;
+    height: 17px;
+    margin-left: 35px;
+}
